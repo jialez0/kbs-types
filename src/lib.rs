@@ -49,14 +49,14 @@ pub struct Request {
     pub version: String,
     pub tee: Tee,
     #[serde(rename = "extra-params")]
-    pub extra_params: Value,
+    pub extra_params: String,
 }
 
 #[derive(Clone, Serialize, Deserialize, Debug)]
 pub struct Challenge {
     pub nonce: String,
     #[serde(rename = "extra-params")]
-    pub extra_params: Value,
+    pub extra_params: String,
 }
 
 #[derive(Clone, Serialize, Deserialize, Debug)]

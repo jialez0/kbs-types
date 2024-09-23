@@ -38,6 +38,8 @@ pub enum Tee {
     // This value is only used for testing an attestation server, and should not
     // be used in an actual attestation scenario.
     Sample,
+
+    System,
 }
 
 #[derive(Clone, Serialize, Deserialize, Debug)]
